@@ -4,15 +4,11 @@
 
   "name": "default",
   "type": "postgres",
-  "host": "localhost",
+  "host": "fin_database",
   "port": 5432,
   "database": "fin_api",
-  "entities": [
-    "./src/modules/**/entities/*.ts"
-  ],
-  "migrations": [
-    "./src/database/migrations/*.ts"
-  ],
+  "entities": ["./src/modules/**/entities/*.ts"],
+  "migrations": ["./src/database/migrations/*.ts"],
   "cli": {
     "migrationsDir": "./src/database/migrations"
   }
